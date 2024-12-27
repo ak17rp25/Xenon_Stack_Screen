@@ -1,13 +1,12 @@
+
 import React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-
+import ListItemText from '@mui/material/ListItemText'
 const Dropdown = ({
-  // eslint-disable-next-line react/prop-types
   items = ['SUPPLIER_references', 'NATION_references_REGION', 'ORDERS_references_CUSTOMER', 'data_lake'],
 }) => {
   const [searchTerm, setSearchTerm] = React.useState('');
@@ -20,7 +19,7 @@ const Dropdown = ({
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
-    //setSearchTerm(item)
+    setIsDropdownOpen(false); // Close dropdown after selection
   };
 
   const handleDropdownToggle = () => {
