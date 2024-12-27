@@ -80,9 +80,9 @@ const DataQuality = ({ progressValue }) => {
             {/* Table Health */}
             <div className="bg-gray-100 rounded-lg p-4 w-full">
               <h3 className="font-semibold text-center mb-4">Table Health</h3>
-              <Doughnut data={tableHealthData} options={{ cutout: "70%" }} />
+              <Doughnut data={tableHealthData} options={{ cutout: "50%" }} />
               <div className="text-center mt-4">
-                <div className="flex  flex-wrap gap-2">
+                <div className="flex justify-center flex-wrap gap-2">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 rounded-full bg-green-600"></div>
                     <span className="text-sm text-gray-800">Success</span>
@@ -104,7 +104,7 @@ const DataQuality = ({ progressValue }) => {
               <h3 className="font-semibold text-center mb-4">
                 Test Results Breakdown
               </h3>
-              <Doughnut data={testResultsData} options={{ cutout: "70%" }} />
+              <Doughnut data={testResultsData} options={{ cutout: "50%" }} />
               <div className="text-center mt-4">
                 <div className="flex justify-center flex-wrap gap-4">
                   <div className="flex items-center space-x-2">
@@ -130,7 +130,7 @@ const DataQuality = ({ progressValue }) => {
               </h3>
               <Doughnut
                 data={monitoredTablesData}
-                options={{ cutout: "70%" }}
+                options={{ cutout: "50%" }}
               />
               <div className="text-center mt-4">
                 <div className="flex justify-center flex-wrap gap-4">
